@@ -1,0 +1,7 @@
+#define CACHE_SIZE 2048
+#define BLOCKS_SIZE 128
+#define ASSOCIATIVITY 8
+#define PREFETCHING 1
+#define BLOCKS_SIZE_N ((int)(log(BLOCKS_SIZE)/log(2)))
+#define NB_BLOCKS (CACHE_SIZE/(BLOCKS_SIZE*ASSOCIATIVITY))
+#define NB_BLOCKS_N ((int)(log(NB_BLOCKS)/log(2)))
